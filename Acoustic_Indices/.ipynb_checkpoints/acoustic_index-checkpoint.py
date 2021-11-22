@@ -107,7 +107,7 @@ class AudioFile(object):
                 print('\tSuccessful read of the audio file:', file_path)
             if len(sig.shape)>1:
                 if verbose:
-                    print('\tThe audio file contains more than one channel. Only the channel', default_channel, 'will be used.')
+#                     print('\tThe audio file contains more than one channel. Only the channel', default_channel, 'will be used.')
                 sig=sig[:, default_channel] # Assign default channel
             self.sr = sr
             self.sig_int = sig
